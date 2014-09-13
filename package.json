@@ -1,0 +1,8 @@
+{
+  "name": "css-galaxy",
+  "description": "a galaxy solely designed with css and less",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
