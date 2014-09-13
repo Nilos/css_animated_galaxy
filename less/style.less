@@ -20,6 +20,7 @@ body { margin:0; padding:0; }
     border: 1px dotted blue;
 
     -webkit-animation: rotate @rotateDuration linear 0s infinite;
+    animation: rotate @rotateDuration linear 0s infinite;
 }
 
 .centerOrbit (@center) when (@center = true) {
@@ -83,6 +84,11 @@ body { margin:0; padding:0; }
 .marsMoonOrbit { .orbit(150px, 3s); border: 1px solid blue; }
 
 @-webkit-keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
